@@ -1,0 +1,113 @@
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f2f2f2;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #0072c6;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    height: 100%;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form-group label {
+    margin-right: 10px;
+    flex: 0 0 auto;
+}
+
+.form-group input,
+.form-group select {
+    flex: 1 1 auto;
+}
+
+#first-name {
+    margin-left: 3.9em;
+}
+
+#last-name {
+    margin-left: 4em;
+}
+
+#email {
+    margin-left: 6.3em;
+}
+
+#phone {
+    margin-left: 6.2em;
+}
+
+#locality {
+    margin-left: 5.2em;
+}
+
+#level-of-studies {
+    margin-left: 1.5em;
+}
+
+#languages {
+    margin-left: 3.8em;
+}
+
+input[type="submit"] {
+    background-color: #0072c6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #00569c;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: auto;
+    z-index: -1;
+}
+
+.logo-left {
+    left: 0;
+}
+
+.logo-right {
+    right: 0;
+}
