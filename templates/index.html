@@ -23,12 +23,14 @@
 
         <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
+            <input type="email" id="email" name="email">
+            <div id="email-error-message" class="error-message"></div><br><br>
         </div>
 
         <div class="form-group">
             <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone"><br><br>
+            <input type="tel" id="phone" name="phone">
+            <div id="phone-error-message" class="error-message"></div><br><br>
         </div>
 
         <div class="form-group">
@@ -53,7 +55,7 @@
                 <option value="Maxim_De_Leus">Maxim De Leus</option>
                 <option value="Maxime_Lambrecht">Maxime Lambrecht</option>
                 <option value="Michaël_Fabris">Michaël Fabris</option>
-                <option value="Michiel_De_ Baets">Michiel De Baets</option>
+                <option value="Michiel_De_Baets">Michiel De Baets</option>
                 <option value="Mie_Vandenbergh">Mie Vandenbergh</option>
                 <option value="Nicolas_Barroy">Nicolas Barroy</option>
                 <option value="Pierre_Henri_Ghequiere">Pierre Henri Ghequiere</option>
@@ -88,11 +90,9 @@
         </div>
         <input type="submit" value="Submit">
     </form>
-
-
+    <script src="static/js/check.js"></script>
     <!--
     <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
-    <script src="js/formToXlsx.js"></script>
--->
+    -->
 </body>
 </html>

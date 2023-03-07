@@ -54,6 +54,15 @@ input, select {
     flex: 1 1 auto;
 }
 
+.invalid {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: small;
+}
+
 input[type="submit"] {
     background-color: #0072c6;
     color: #fff;
@@ -67,6 +76,11 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #00569c;
+}
+
+input[type="submit"]:disabled {
+  background-color: grey;
+  cursor: not-allowed;
 }
 
 .logo {

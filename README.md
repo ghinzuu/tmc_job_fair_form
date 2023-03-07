@@ -2,8 +2,8 @@
 
 To run the application you will need:
 - python3 : https://www.python.org/downloads/
-- Flask: pip install Flask (on terminal)
-- openpyxl : pip install openpyxl (on terminal)
+- Flask: pip3 install Flask (on terminal)
+- openpyxl : pip3 install openpyxl (on terminal)
 
 # Usage
 
