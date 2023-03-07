@@ -1,15 +1,16 @@
 body {
-    font-family: 'Merriweather', serif;
+    font-family: 'Trebuchet MS', sans-serif;
     background-color: #f2f2f2;
 }
 
 form {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 650px;
     padding: 20px;
     border: 1px solid #ccc;
     background-color: #fff;
     border-radius: 5px;
+    height: 480px;
 }
 
 h1 {
@@ -18,24 +19,24 @@ h1 {
 }
 
 label {
-    display: block;
+    width:160px;
+    clear:left;
+    text-align:right;
+    padding-right:10px;
+    float:left;
+    line-height: 20px;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 input, select {
-    display: block;
-    width: 70%;
+    float:left;
+    margin-left: 10px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
-select {
-    height: 100%;
-}
-
 
 .form-group {
     display: flex;
@@ -49,47 +50,19 @@ select {
     flex: 0 0 auto;
 }
 
-.form-group input,
-.form-group select {
+.form-group input, .form-group select {
     flex: 1 1 auto;
-}
-
-#first-name {
-    margin-left: 3.9em;
-}
-
-#last-name {
-    margin-left: 4em;
-}
-
-#email {
-    margin-left: 6.3em;
-}
-
-#phone {
-    margin-left: 6.2em;
-}
-
-#locality {
-    margin-left: 5.2em;
-}
-
-#level-of-studies {
-    margin-left: 1.5em;
-}
-
-#languages {
-    margin-left: 3.8em;
 }
 
 input[type="submit"] {
     background-color: #0072c6;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 20px;
+    margin-left: 100px;
     border-radius: 4px;
     cursor: pointer;
-    width: 100%;
+    width: 80%;
 }
 
 input[type="submit"]:hover {

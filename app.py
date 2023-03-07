@@ -12,8 +12,9 @@ def index():
         email = request.form['email']
         phone = request.form['phone']
         locality = request.form['locality']
-        bmanager = request.form['business-manager']
+        bmanager = request.form.getlist('business-manager')
         level_of_studies = request.form['level-of-studies']
+        thesis = request.form['thesis']
         languages = request.form.getlist('languages')
 
         # Open existing Excel file
@@ -21,7 +22,7 @@ def index():
         worksheet = workbook.active
 
         # Append form data to Excel file
-        row = [first_name, last_name, email, phone, locality, bmanager, level_of_studies, ', '.join(languages)]
+        row = [first_name, last_name, email, phone, locality, ', '.join(bmanager), level_of_studies, thesis, ', '.join(languages)]
         worksheet.append(row)
 
         # Save changes to Excel file

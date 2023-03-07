@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <h1>Job Fair TMC Contact
-        <input type="image" class="logo" src="static/img/tmc_blue.jpeg">
-    </h1>
+    <h1>Job Fair TMC Contact Form
 
+    </h1>
+    <input type="image" class="logo" src="static/img/tmc_blue.jpeg">
     <form method="POST">
         <div class="form-group">
             <label for="first-name">First name:</label>
@@ -38,26 +38,52 @@
 
         <div class="form-group">
             <label for="business-manager">Business Manager:</label>
-            <input type="text" id="business-manager" name="business-manager"><br><br>
-        </div>
-
-        <div class="form-group">
-            <label for="level-of-studies">Level of studies:</label>
-            <select id="level-of-studies" name="level-of-studies">
-                <option value="high-school">High School</option>
-                <option value="bachelor">Bachelor's Degree</option>
-                <option value="master">Master's Degree</option>
-                <option value="doctorate">Doctorate</option>
+            <select id="business-manager" name="business-manager">
+                <option value="An-Sofie_Vandersmissen">An-Sofie Vandersmissen</option>
+                <option value="Bob_Vangeel">Bob Vangeel</option>
+                <option value="Charlotte_Laureijs">Charlotte Laureijs</option>
+                <option value="Corentin_Thielemans">Corentin Thielemans</option>
+                <option value="Elizabeth_Vela_Esparza">Elizabeth Vela Esparza</option>
+                <option value="Jacques-Omer_Lescot">Jacques-Omer Lescot</option>
+                <option value="Jaskaran_Sandhu">Jaskaran Sandhu</option>
+                <option value="Kevin_Marco_Alvarez">Kevin Marcos Alvarez</option>
+                <option value="Liza_Dewyse">Liza Dewyse</option>
+                <option value="Matthias_Corneillie">Matthias Corneillie</option>
+                <option value="Matthias_Desmet (Matthias)">Matthias Desmet (Matthias)</option>
+                <option value="Maxim_De_Leus">Maxim De Leus</option>
+                <option value="Maxime_Lambrecht">Maxime Lambrecht</option>
+                <option value="Michaël_Fabris">Michaël Fabris</option>
+                <option value="Michiel_De_ Baets">Michiel De Baets</option>
+                <option value="Mie_Vandenbergh">Mie Vandenbergh</option>
+                <option value="Nicolas_Barroy">Nicolas Barroy</option>
+                <option value="Pierre_Henri_Ghequiere">Pierre Henri Ghequiere</option>
+                <option value="Sam_Lahaye">Sam Lahaye</option>
+                <option value="Sander_Dejongh">Sander Dejongh</option>
+                <option value="Sony_Dansy">Sony Dansy</option>
+                <option value="Tangi_Vern">Tangi Vern</option>
+                <option value="Victor_Top">Victor Top</option>
+                <option value="Yacine_Dehbi">Yacine Dehbi</option>
             </select><br><br>
         </div>
 
         <div class="form-group">
+            <label for="level-of-studies">Level of studies:</label>
+            <input type="text" id="level-of-studies" name="level-of-studies"><br><br>
+        </div>
+        <div class="form-group">
+            <label for="thesis">Thesis topic:</label>
+            <input type="text" id="thesis" name="thesis"><br><br>
+        </div>
+        <div class="form-group">
             <label for="languages">Languages:</label>
             <select id="languages" name="languages">
+                <option value="english-dutch-french">English-Dutch-French</option>
+                <option value="english-dutch">English-Dutch</option>
+                <option value="english-french">English-French</option>
                 <option value="english">English</option>
-                <option value="spanish">Spanish</option>
+                <option value="dutch-french">Dutch-French</option>
+                <option value="dutch">Dutch</option>
                 <option value="french">French</option>
-                <option value="german">German</option>
             </select><br><br>
         </div>
         <input type="submit" value="Submit">
